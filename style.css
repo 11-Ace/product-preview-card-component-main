@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 600px;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 13px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+picture img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.right {
+  padding: 30px;
+  margin: auto;
+}
+
+.category {
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.pro-name {
+  font-family: 'Fraunces', serif;
+  line-height: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  line-height: 1.7rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%)
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.3rem;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.new-price {
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  
+  width: 100%;
+}
+
+button:active, button:hover {
+  background-color: hsl(156, 42%, 18%);
+}
+
+button .button-text {
+  word-spacing: 2px;
+  margin-left: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center; 
+}
+
+.attribution a { 
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+ .card {
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+ }
+
+ .right {
+  margin-bottom: 10px;
+ }
+
+ picture{
+  width: 100%;
+ }
+}
